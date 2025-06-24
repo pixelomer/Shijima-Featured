@@ -1,4 +1,4 @@
-#!/usr/bin/env -S deno run --allow-read --allow-write=dist --allow-write=dist/featured.json
+#!/usr/bin/env -S deno run --allow-read --allow-write=dist --allow-write=dist/featured.json --allow-write=dist/revision.txt
 
 import * as YAML from "jsr:@std/yaml";
 import { encodeBase64 } from "jsr:@std/encoding/base64";
@@ -47,3 +47,11 @@ const featuredData = {
 
 await Deno.mkdir("dist", { recursive: true });
 await Deno.writeTextFile("dist/featured.json", JSON.stringify(featuredData));
+
+if (Deno.env.has("GITHUB_RUN_NUMBER")) {
+    const runNumberStr = Deno.env.get("GITHUB_RUN_NUMBER")!;
+    const runNumber = parseInt(runNumberStr, 10);
+    if (!isNaN(runNumber)) {
+        await Deno.writeTextFile("dist/revision.txt", `${runNumber}`);
+    }
+}
