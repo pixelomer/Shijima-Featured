@@ -5,6 +5,8 @@
 !shimeji/
 !shimeji/*.yaml
 !shimeji/*.png
+!static/
+!static/*.html
 !.gitattributes
 !.gitignore
 !generate.ts

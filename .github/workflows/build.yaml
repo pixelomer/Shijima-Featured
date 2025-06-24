@@ -28,11 +28,15 @@ jobs:
           cache: true
           deno-version: v2.x
       - name: Run generate
-        run: ./generate.ts
+        run: |
+          rm -rf dist
+          cp -r static dist
+          ./generate.ts
+          cp --recursive --dereference --no-preserve=mode,ownership dist artifact
       - uses: actions/upload-artifact@v4
         with:
           name: github-pages
-          path: dist/
+          path: artifact/
   deploy:
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     runs-on: ubuntu-latest
@@ -44,6 +48,8 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v1
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
