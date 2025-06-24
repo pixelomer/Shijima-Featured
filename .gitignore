@@ -1,0 +1,12 @@
+*
+!.github/
+!.github/workflows
+!.github/workflows/build.yaml
+!shimeji/
+!shimeji/*.yaml
+!shimeji/*.png
+!.gitattributes
+!.gitignore
+!generate.ts
+!lint.ts
+!README.md
