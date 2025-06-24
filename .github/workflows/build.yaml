@@ -28,7 +28,7 @@ jobs:
         run: ./generate.ts
       - uses: actions/upload-artifact@v4
         with:
-          name: dist
+          name: github-pages
           path: dist/
   deploy:
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
