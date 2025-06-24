@@ -40,6 +40,8 @@ for await (const file of Deno.readDir("shimeji")) {
     result.push(json);
 }
 
+await Deno.mkdir("dist", { recursive: true });
+
 let revision = Math.floor(Date.now() / 1000);
 
 if (Deno.env.has("GITHUB_RUN_NUMBER")) {
@@ -61,5 +63,4 @@ const featuredData = {
     shimeji: result
 };
 
-await Deno.mkdir("dist", { recursive: true });
 await Deno.writeTextFile("dist/featured.json", JSON.stringify(featuredData));
