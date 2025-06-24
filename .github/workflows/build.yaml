@@ -28,10 +28,7 @@ jobs:
           cache: true
           deno-version: v2.x
       - name: Run generate
-        run: |
-          rm -rf dist
-          cp -r static dist
-          ./generate.ts
+        run: ./generate.ts
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/
