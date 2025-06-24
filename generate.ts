@@ -57,6 +57,8 @@ const indexTemplate = await Deno.readTextFile("static/index.html");
 const index = indexTemplate.replaceAll("$$REVISION$$", `${revision}`);
 await Deno.writeTextFile("dist/index.html", index);
 
+result.sort((a, b) => (a.name > b.name) ? 1 : -1);
+
 const featuredData = {
     revision: revision,
     version: 1,
