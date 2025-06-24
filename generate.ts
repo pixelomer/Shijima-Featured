@@ -40,14 +40,6 @@ for await (const file of Deno.readDir("shimeji")) {
     result.push(json);
 }
 
-const featuredData = {
-    version: 1,
-    shimeji: result
-};
-
-await Deno.mkdir("dist", { recursive: true });
-await Deno.writeTextFile("dist/featured.json", JSON.stringify(featuredData));
-
 let revision = Math.floor(Date.now() / 1000);
 
 if (Deno.env.has("GITHUB_RUN_NUMBER")) {
@@ -63,3 +55,11 @@ const indexTemplate = await Deno.readTextFile("static/index.html");
 const index = indexTemplate.replaceAll("$$REVISION$$", `${revision}`);
 await Deno.writeTextFile("dist/index.html", index);
 
+const featuredData = {
+    revision: revision,
+    version: 1,
+    shimeji: result
+};
+
+await Deno.mkdir("dist", { recursive: true });
+await Deno.writeTextFile("dist/featured.json", JSON.stringify(featuredData));
