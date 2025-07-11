@@ -18,7 +18,7 @@ body:
       required: true
 
   - type: textarea
-    id: shimeji-description
+    id: shimeji-removal-reason
     attributes:
       label: >-
         Why do you want to remove your shimeji from Shijima's featured
@@ -42,7 +42,7 @@ body:
           required: true
   
   - type: checkboxes
-    id: removal-notice
+    id: creator-verification
     attributes:
       label: >-
         I am this shimeji's original creator, or I have permission from the
