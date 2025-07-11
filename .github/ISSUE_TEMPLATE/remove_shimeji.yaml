@@ -1,0 +1,52 @@
+name: "❌ Removal Request"
+description: Get your shimeji removed from Shijima's featured tab
+title: "[Removal Request]: (Write your shimeji's name here...)"
+labels: ["Removal Request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for using the shimeji removal request form.
+        We will handle your request as soon as possible.
+
+  - type: input
+    id: shimeji-name
+    attributes:
+      label: >-
+        What is your shimeji called?
+    validations:
+      required: true
+
+  - type: textarea
+    id: shimeji-description
+    attributes:
+      label: >-
+        Why do you want to remove your shimeji from Shijima's featured
+        shimeji list? (This question is optional. We will honor your
+        removal request even if you don't answer this question.)
+    validations:
+      required: false
+  
+  - type: checkboxes
+    id: removal-notice
+    attributes:
+      label: >-
+        I understand that getting my shimeji removed from the Featured tab
+        will not erase it from the history of this repository.
+      description: >-
+        Because of how Git works, even if a file is deleted from the repository,
+        it will continue to be available through the commit history. However,
+        your shimeji will no longer be shown to the users of Shijima.
+      options:
+        - label: "I understand"
+          required: true
+  
+  - type: checkboxes
+    id: removal-notice
+    attributes:
+      label: >-
+        I am this shimeji's original creator, or I have permission from the
+        original creator to get this shimeji removed.
+      options:
+        - label: "I agree"
+          required: true
