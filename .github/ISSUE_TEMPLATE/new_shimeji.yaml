@@ -116,7 +116,7 @@ body:
   - type: checkboxes
     id: rights-confirmation
     attributes:
-        label: Grant of rights
+        label: "Grant of rights: You must read [grant_of_rights.md](https://github.com/pixelomer/Shijima-Featured/blob/f0123f05732b9523a72d6e5a5bdde8174b61ded4/grant_of_rights.md) and agree to it to submit your shimeji."
         description: |
           In this text,
 
@@ -140,5 +140,5 @@ body:
           that Content (including to reproduce, distribute, modify, display, and
           perform it) only as enabled by a feature of Shijima.
         options:
-          - label: 'I agree'
+          - label: 'I have read [grant_of_rights.md](https://github.com/pixelomer/Shijima-Featured/blob/f0123f05732b9523a72d6e5a5bdde8174b61ded4/grant_of_rights.md) and I agree to it.'
             required: true
