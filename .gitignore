@@ -1,9 +1,9 @@
 *
 !.github/
 !.github/ISSUE_TEMPLATE/
-!.github/ISSUE_TEMPLATE/new_shimeji.yaml
+!.github/ISSUE_TEMPLATE/*.yaml
 !.github/workflows
-!.github/workflows/build.yaml
+!.github/workflows/*.yaml
 !shimeji/
 !shimeji/*.yaml
 !shimeji/*.png
