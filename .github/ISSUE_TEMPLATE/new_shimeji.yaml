@@ -1,0 +1,120 @@
+name: "New Shimeji Request"
+description: Submit your own shimeji to the featured tab
+title: "[New Shimeji]: "
+labels: ["New Shimeji"]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        **Thank you for submitting your shimeji to Shijima's featured page!**
+        Your contributions will make shimeji more accessible to everyone.
+
+  - type: input
+    id: shimeji-name
+    attributes:
+      label: >-
+        What is your shimeji called? Most of the time, this is the depicted
+        character's name.
+    validations:
+      required: true
+
+  - type: input
+    id: shimeji-description
+    attributes:
+      label: >-
+        What is the source material for this shimeji? Is it from a TV show,
+        anime, video game or something else? Is it your original character?
+    validations:
+      required: true
+
+  - type: textarea
+    id: shimeji-actions
+    attributes:
+      label: >-
+        How complex or simple is your shimeji? Does it have any unique
+        actions, hotspots or affordances? (Your shimeji does not have to
+        be complicated or special. However, if your shimeji has some unique
+        traits, you can describe them here.)
+    validations:
+      required: false
+
+  - type: input
+    id: shimeji-url
+    attributes:
+      label: >-
+        Where can users download your shimeji? Preferably, this will be a link to
+        a social media post or your own website with a shimeji download link
+        somewhere on the page.
+    validations:
+      required: true
+
+  - type: input
+    id: artist-name
+    attributes:
+      label: >-
+        What is your name? What should be displayed next to the "Artist" or "Creator"
+        labels within Shijima?
+    validations:
+      required: true
+
+  - type: input
+    id: artist-url
+    attributes:
+      label: >-
+        Where can users find you? This could be your DeviantArt, Tumblr or Twitter page,
+        your website or something else.
+    validations:
+      required: true
+  
+  - type: checkboxes
+    id: content-confirmation
+    attributes:
+        label: Your submission must comply with the submission guidelines to be accepted.
+        description: |
+          Submission guidelines: https://github.com/pixelomer/Shijima-Featured/blob/main/submission_guidelines.md
+          GitHub's site policy: https://docs.github.com/en/site-policy
+        options:
+          - label: 'My submission is compliant with the submission guidelines'
+            required: true
+  
+  - type: checkboxes
+    id: content-confirmation
+    attributes:
+        label: Your submission must comply with the submission guidelines to be accepted.
+        description: |
+          Submission guidelines: https://github.com/pixelomer/Shijima-Featured/blob/main/submission_guidelines.md
+          GitHub's site policy: https://docs.github.com/en/site-policy
+        options:
+          - label: 'My submission is compliant with the submission guidelines'
+            required: true
+    
+  - type: checkboxes
+    id: rights-confirmation
+    attributes:
+        label: Grant of rights
+        description: |
+          In this text,
+
+          - Shijima refers to any current and future versions of Shijima developed
+          by pixelomer including Shijima-Qt, Shijima-iOS, Shijima-Wii, Shijima-NX
+          and Shijima-Android.
+          - Content refers to the shimeji identified by your submission, and the
+          other information your provided as a part of your submission.
+
+          You retain all of your ownership rights to your Content. What belongs to
+          you stays yours. However, to submit your Content to Shijima, you are
+          required to grant some rights to pixelomer, the developer of Shijima.
+          
+          By submitting your Content to this repository, you grant to pixelomer
+          a worldwide, non-exclusive, royalty-free, transferable, sublicensable
+          license to use your Content (including to reproduce, distribute, modify,
+          display and perform it) for the purpose of operating, promoting, and
+          improving Shijima.
+
+          You also grant each other user of Shijima a worldwide, non-exclusive,
+          royalty-free license to access your Content through Shijima, and to use
+          that Content (including to reproduce, distribute, modify, display, and
+          perform it) only as enabled by a feature of Shijima.
+        options:
+          - label: 'I agree'
+            required: true
