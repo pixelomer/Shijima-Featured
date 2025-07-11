@@ -116,7 +116,7 @@ body:
   - type: checkboxes
     id: rights-confirmation
     attributes:
-        label: "Grant of rights: You must read [grant_of_rights.md](https://github.com/pixelomer/Shijima-Featured/blob/f0123f05732b9523a72d6e5a5bdde8174b61ded4/grant_of_rights.md) and agree to it to submit your shimeji."
+        label: "Grant of rights: You must read grant_of_rights.md and agree to it to submit your shimeji."
         description: |
           In this text,
 
