@@ -120,7 +120,7 @@ body:
         description: |
           In this text,
 
-          - Shijima refers to any current and future versions of Shijima developed
+          - Shijima refers to any past, current and future versions of Shijima developed
           by pixelomer including Shijima-Qt, Shijima-iOS, Shijima-Wii, Shijima-NX.
           - Content refers to the shimeji identified by your submission, and the
           other information your provided as a part of your submission.
@@ -128,7 +128,7 @@ body:
           You retain all of your ownership rights to your Content. What belongs to
           you stays yours. However, to submit your Content to Shijima, you are
           required to grant some rights to pixelomer, the developer of Shijima.
-          
+
           By submitting your Content to this repository, you grant to pixelomer
           a worldwide, non-exclusive, royalty-free, transferable, sublicensable
           license to use your Content (including to reproduce, distribute, modify,
