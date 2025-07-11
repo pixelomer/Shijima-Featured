@@ -5,9 +5,12 @@ labels: ["New Shimeji"]
 body:
   - type: markdown
     attributes:
-      value: >-
-        **Thank you for submitting your shimeji to Shijima's featured page!**
+      value: |
+        Thank you for submitting your shimeji to Shijima's featured page!**
         Your contributions will make shimeji more accessible to everyone.
+        
+        > [!TIP]
+        > Make sure to take a look at some of the existing shimeji before submitting your own shimeji. This may help you understand the questions better.
 
   - type: input
     id: shimeji-name
@@ -19,7 +22,7 @@ body:
       required: true
 
   - type: input
-    id: shimeji-description
+    id: shimeji-source
     attributes:
       label: >-
         What is the source material for this shimeji? Is it from a TV show,
@@ -35,6 +38,17 @@ body:
         actions, hotspots or affordances? (Your shimeji does not have to
         be complicated or special. However, if your shimeji has some unique
         traits, you can describe them here.)
+    validations:
+      required: false
+
+  - type: textarea
+    id: shimeji-description
+    attributes:
+      label: >-
+        What should be shown in the "Description" field for the shimeji? This
+        can be a funny quote from the character, an inside joke for those
+        familiar with the character's lore, or a generic description of the
+        character.
     validations:
       required: false
 
@@ -71,8 +85,8 @@ body:
     attributes:
         label: Your submission must comply with the submission guidelines to be accepted.
         description: |
-          Submission guidelines: https://github.com/pixelomer/Shijima-Featured/blob/main/submission_guidelines.md
-          GitHub's site policy: https://docs.github.com/en/site-policy
+          - Submission guidelines: https://github.com/pixelomer/Shijima-Featured/blob/main/submission_guidelines.md
+          - GitHub's site policy: https://docs.github.com/en/site-policy
         options:
           - label: 'My submission is compliant with the submission guidelines'
             required: true
