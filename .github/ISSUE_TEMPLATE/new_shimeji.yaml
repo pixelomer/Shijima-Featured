@@ -76,17 +76,6 @@ body:
         options:
           - label: 'My submission is compliant with the submission guidelines'
             required: true
-  
-  - type: checkboxes
-    id: content-confirmation
-    attributes:
-        label: Your submission must comply with the submission guidelines to be accepted.
-        description: |
-          Submission guidelines: https://github.com/pixelomer/Shijima-Featured/blob/main/submission_guidelines.md
-          GitHub's site policy: https://docs.github.com/en/site-policy
-        options:
-          - label: 'My submission is compliant with the submission guidelines'
-            required: true
     
   - type: checkboxes
     id: rights-confirmation
