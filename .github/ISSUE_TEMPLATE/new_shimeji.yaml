@@ -79,6 +79,15 @@ body:
         your website or something else.
     validations:
       required: true
+
+  - type: input
+    id: preview-filename
+    attributes:
+      label: >-
+        Which image within the shimeji should be used as the preview image in Shijima?
+        (e.g. shime1.png)
+    validations:
+      required: true
   
   - type: checkboxes
     id: test-confirmation
