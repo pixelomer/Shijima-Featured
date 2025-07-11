@@ -1,12 +1,12 @@
 name: "New Shimeji Request"
 description: Submit your own shimeji to the featured tab
-title: "[New Shimeji]: "
+title: "[New Shimeji]: (Write your shimeji's name here...)"
 labels: ["New Shimeji"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for submitting your shimeji to Shijima's featured page!**
+        Thank you for submitting your shimeji to Shijima's featured page!
         Your contributions will make shimeji more accessible to everyone.
         
         > [!TIP]
@@ -50,7 +50,7 @@ body:
         familiar with the character's lore, or a generic description of the
         character.
     validations:
-      required: false
+      required: true
 
   - type: input
     id: shimeji-url
@@ -81,6 +81,19 @@ body:
       required: true
   
   - type: checkboxes
+    id: test-confirmation
+    attributes:
+        label: You must test the shimeji with Shijima before submitting it here.
+        description: >-
+          You can test your shimeji with [Shijima-Qt](https://github.com/pixelomer/Shijima-Qt) on
+          your PC. Alternatively, as a shimeji creator, you may be eligible to receive a free copy
+          of [Shijima-iOS](https://havoc.app/package/shijima). Please note that a jailbroken
+          iPhone or iPad is required if you want to use Shijima-iOS.
+        options:
+          - label: 'I have tested the shimeji with Shijima and confirmed that it works as expected'
+            required: true
+  
+  - type: checkboxes
     id: content-confirmation
     attributes:
         label: Your submission must comply with the submission guidelines to be accepted.
@@ -99,8 +112,7 @@ body:
           In this text,
 
           - Shijima refers to any current and future versions of Shijima developed
-          by pixelomer including Shijima-Qt, Shijima-iOS, Shijima-Wii, Shijima-NX
-          and Shijima-Android.
+          by pixelomer including Shijima-Qt, Shijima-iOS, Shijima-Wii, Shijima-NX.
           - Content refers to the shimeji identified by your submission, and the
           other information your provided as a part of your submission.
 
