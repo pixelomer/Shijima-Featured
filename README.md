@@ -5,7 +5,7 @@
 
 ### What is this?
 
-This repository hosts list of shimeji that will appear when a user checks the Featured tab in [Shijima-iOS](https://havoc.app/package/shijima). This data is hosted on GitHub to automate updates and to make it easier for the community to contribute their own shimeji.
+This repository hosts the list of shimeji that will appear when a user checks the Featured tab in [Shijima-iOS](https://havoc.app/package/shijima). This data is hosted on GitHub to automate updates and to make it easier for community members to contribute their own shimeji.
 
 ### I want to add my own shimeji to this list. How do I do it?
 
