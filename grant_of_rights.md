@@ -1,3 +1,5 @@
+(This document only applies to shimeji submitted to https://github.com/pixelomer/Shijima-Featured through GitHuh issues after July 13, 2025.)
+
 In this text,
 
 - Shijima refers to any past, current and future versions of Shijima developed by pixelomer including Shijima-Qt, Shijima-iOS, Shijima-Wii, Shijima-NX.
