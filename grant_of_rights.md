@@ -1,4 +1,4 @@
-(This document only applies to shimeji submitted to https://github.com/pixelomer/Shijima-Featured through GitHuh issues after July 13, 2025.)
+(This document only applies to shimeji submitted to https://github.com/pixelomer/Shijima-Featured through GitHub issues after July 13, 2025.)
 
 In this text,
 
