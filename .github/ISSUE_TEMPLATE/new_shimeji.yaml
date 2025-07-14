@@ -118,6 +118,8 @@ body:
     attributes:
         label: "Grant of rights: You must read grant_of_rights.md and agree to it to submit your shimeji."
         description: |
+          (This document only applies to shimeji submitted to https://github.com/pixelomer/Shijima-Featured through GitHuh issues after July 13, 2025.)
+          
           In this text,
 
           - Shijima refers to any past, current and future versions of Shijima developed
