@@ -2,7 +2,7 @@
 
 In this text,
 
-- Shijima refers to any past, current and future versions of Shijima developed by pixelomer including Shijima-Qt, Shijima-iOS, Shijima-Wii, Shijima-NX.
+- Shijima refers to any past, current and future versions of Shijima developed by pixelomer including Shijima-Qt, Shijima-iOS, Shijima-Wii, Shijima-NX and Shijima-Android.
 - Content refers to the shimeji identified by your submission, and the other information your provided as a part of your submission.
 
 You retain all of your ownership rights to your Content. What belongs to
