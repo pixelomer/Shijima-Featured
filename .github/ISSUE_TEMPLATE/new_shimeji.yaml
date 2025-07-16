@@ -96,8 +96,11 @@ body:
         description: >-
           You can test your shimeji with [Shijima-Qt](https://github.com/pixelomer/Shijima-Qt) on
           your PC. Alternatively, as a shimeji creator, you may be eligible to receive a free copy
-          of [Shijima-iOS](https://havoc.app/package/shijima). Please note that a jailbroken
-          iPhone or iPad is required if you want to use Shijima-iOS.
+          of [Shijima-iOS](https://havoc.app/package/shijima) or
+          [Shijima-Android](https://play.google.com/store/apps/details?id=com.pixelomer.shijima).
+          Shijima-Android can be used on any unmodified Android mobile device running Android 8
+          or later. However, please note that a jailbroken iPhone or iPad running iOS 14 or later
+          is required if you want to use Shijima-iOS.
         options:
           - label: 'I have tested the shimeji with Shijima and confirmed that it works as expected'
             required: true
@@ -143,5 +146,5 @@ body:
           that Content (including to reproduce, distribute, modify, display, and
           perform it) only as enabled by a feature of Shijima.
         options:
-          - label: 'I have read [grant_of_rights.md](https://github.com/pixelomer/Shijima-Featured/blob/8f654abd2e2de6ec8ce9c486e04f527a0dd4ea5b/grant_of_rights.md) and I agree to it.'
+          - label: 'I have read [grant_of_rights.md](https://github.com/pixelomer/Shijima-Featured/blob/96af7142568bc5c2587b386facc1f1921b0464f7/grant_of_rights.md) and I agree to it.'
             required: true
